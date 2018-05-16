@@ -1,14 +1,15 @@
 Standard query for the current RPM
 
-Query:		can0	7DF	[8]	    02	    01	     0C	00	00	00	00	00
-                    Query		size	mode	RPM
-			Broadcast-ID	01+0C	show data
+Query:          can0    7DF     [8]         02      01       0C0000000000
+                        Query               size    mode     RPM
+                        Broadcast-ID    01+0C   show data
 
-Response:	can0 	7E8	[8]  	04 	        41 	0C 	1B 	CF 	00 	00 	00
-                    Response	size		-----------Data-----------
-			7E8-7EF
 
-							1B(h) = 27
-							CF(h) = 207
-							RPM = (256 * 27 + 207)/4
-							~ 1780 RPM
+Response:       can0    7E8     [8]     04              410C1BCF000000
+                        Response        size            ------Data----
+                        7E8-7EF
+
+                1B(h) = 27
+                CF(h) = 207
+                RPM = (256 * 27 + 207)/4
+                ~ 1780 RPM

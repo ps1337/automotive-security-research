@@ -7,7 +7,7 @@ import codecs
 import sys
 
 # This script converts the desired displayed speed for a
-# Model 8 8 (2010) speedometer to a CAN payload
+# Model 8 (2010) speedometer to a CAN payload
 
 # @author pschmied
 
